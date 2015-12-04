@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="'IE=edge,chrome=1' 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yolocrew VRaPP</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="css/index.css" rel="stylesheet" />
+<style>
+/* reset */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/* main */
+
+body {
+  background-image: url("images/backgroundhd.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-family: 'roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.navicon {
+  width: 100%;
+  background: transparent;
+  margin: 80px auto 40px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+  display: block;
+  z-index: 99;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+
+.navicon:before, .navicon:after {
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  content: "";
+  height: 3px;
+  left: 0;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+  width: 45px;
+}
+
+.navicon:before {
+  box-shadow: #fff 0 14px 0 0;
+  position: absolute;
+  top: 0;
+}
+
+.navicon:after {
+  position: absolute;
+  top: 28px;
+}
+
+.navicon--active {
+  margin-top: 20px;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+}
+
+.navicon--active:before {
+  box-shadow: transparent 0 0 0 0;
+  top: 15px;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+.navicon--active:after {
+  top: 15px;
+  -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+.toggle {
+  display: block;
+  margin: 20px auto;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  display: block;
+  opacity: 0;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  min-width: 320px;
+}
+
+.toggle--active {
+  display: block;
+  opacity: 1;
+  -webkit-transition: ease-in 0.5s all;
+  transition: ease-in 0.5s all;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.toggle-menu { margin-bottom: 25px; }
+
+.toggle-menu li {
+  width: 25%;
+  display: block;
+  margin: 10px auto;
+}
+
+.toggle-menu li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+.toggle-menu li a span { text-transform: lowercase; }
+
+.toggle-menu li a:hover {
+  color: #db5523;
+  border-bottom: 2px solid #db5523;
+  -webkit-transition: linear 0.5s all;
+  transition: linear 0.5s all;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  font-weight: 700;
+}
+
+</style>
+</head>
+
+<body>
+<a href="#" class="navicon"></a>
+<div class="toggle">
+  <h1>Yolocrew VRaPP</h1>
+  <ul class="toggle-menu">
+    <li><a href="home.html">360 VR Videos</a></li>
+    <li><a href="#">360 VR Photos</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Khang</li>
+  </ul>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+     <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+
+<script>
+$('.navicon').on('click', function (e) {
+  e.preventDefault();
+  $(this).toggleClass('navicon--active');
+  $('.toggle').toggleClass('toggle--active');
+});
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
